@@ -1,0 +1,23 @@
+<form class="form-inline" (submit)="enviar(modelLogin)">
+  <label class="sr-only" for="inlineFormInput">Name</label>
+
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="User ID" [(ngModel)]="modelLogin.userId" name="name">
+
+<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Title" [(ngModel)]="modelLogin.title"
+  name="title">
+
+<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Body" [(ngModel)]="modelLogin.body"
+  name="body">
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<pre>
+  {{modelLogin | json}}
+</pre>
+<!-- 
+<ul>
+  <li *ngFor="let p of posts">{{p.title}}</li>
+</ul> -->
+
